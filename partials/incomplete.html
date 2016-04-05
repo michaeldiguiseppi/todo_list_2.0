@@ -1,0 +1,8 @@
+<div>
+  <h3>Incomplete</h3>
+  <ul class="none">
+    <li ng-repeat="todo in todoList.todoArray" ng-show="!todo.completed">
+      <input type="checkbox" ng-checked="todo.completed" ng-click="todoList.changeTodo(todo)" />&nbsp;&nbsp;{{ todo.task }}
+    </li>
+  </ul>
+</div>
